@@ -1,0 +1,11 @@
+{
+  "name": "connect-four",
+  "version": "1.0.0",
+  "description": "Connect Four game with local and online multiplayer support",
+  "scripts": {
+    "dev": "cd server && npm run dev",
+    "install:server": "cd server && npm install",
+    "build": "cd server && npm run build",
+    "start": "cd server && npm start"
+  }
+}
