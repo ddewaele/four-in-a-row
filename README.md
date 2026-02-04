@@ -2,6 +2,11 @@
 
 A Connect Four game with both local 2-player and online multiplayer support. Built with vanilla JavaScript frontend and Node.js/Socket.IO backend.
 
+<img width="513" height="558" alt="image" src="https://github.com/user-attachments/assets/47707550-c712-44e0-83d3-1c46f3b16831" />
+
+<img width="716" height="933" alt="image" src="https://github.com/user-attachments/assets/5a1f42e5-1915-4816-8b11-a03c82e10256" />
+
+
 ## Features
 
 - **Local 2 Player Mode** - Play on the same device, scores saved to localStorage
