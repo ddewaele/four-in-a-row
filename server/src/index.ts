@@ -36,7 +36,9 @@ const gameManager = new GameManager();
 setupSocketHandlers(io, gameManager);
 
 // Start server
-httpServer.listen(PORT, () => {
+const HOST = process.env.HOST || '127.0.0.1';
+
+httpServer.listen(Number(PORT), HOST, () => {
   console.log(`
 ╔═══════════════════════════════════════════╗
 ║     Connect Four Multiplayer Server       ║
