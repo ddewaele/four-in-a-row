@@ -98,14 +98,20 @@ pm2 startup
 pm2 save
 ```
 
-**Useful PM2 commands:**
+**Important:** `pm2 startup` prints a `sudo env PATH=...` command you must run to enable auto-start. Then run `pm2 save` to persist the process list.
 
-```bash
-pm2 status              # Check status
-pm2 logs connect-four   # View logs
-pm2 restart connect-four # Restart after updates
-pm2 stop connect-four   # Stop the app
-```
+**PM2 commands reference:**
+
+| Command | Description |
+|---------|-------------|
+| `pm2 status` / `pm2 list` | Table of all managed processes |
+| `pm2 logs connect-four` | Live log output (Ctrl+C to exit) |
+| `pm2 monit` | Interactive dashboard with CPU/mem/logs |
+| `pm2 show connect-four` | Detailed info (paths, uptime, restarts) |
+| `pm2 restart connect-four` | Restart the app |
+| `pm2 stop connect-four` | Stop without removing from PM2 |
+| `pm2 delete connect-four` | Stop and remove from PM2 |
+| `pm2 save` | Save current process list for auto-restore |
 
 ### 3. Nginx Reverse Proxy + SSL
 
